@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Opciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu-item {
+            background-color: #e100ff73;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 200px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .menu-item:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menú de Opciones</h1>
+    <div class="menu">
+        <a href="http://127.0.0.1:8000/admin/moniweb/departamento/add/" class="menu-item">Departamentos</a>
+        <a href="http://127.0.0.1:8000/admin/moniweb/ciudad/add/" class="menu-item">Ciudades</a>
+        <a href="http://127.0.0.1:8000/admin/moniweb/transportista/add/" class="menu-item">Transportistas</a>
+        <a href="http://127.0.0.1:8000/admin/moniweb/producto/add/" class="menu-item">Productos</a>
+    </div>
+</body>
+</html>
