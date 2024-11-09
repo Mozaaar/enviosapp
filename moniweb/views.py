@@ -1,5 +1,4 @@
-# moniweb/views.py
-# moniweb/views.py
+
 from django.shortcuts import render
 from .models import Departamento, Ciudad, Transportista, Producto  # Asegúrate de importar los modelos necesarios
 
@@ -19,7 +18,6 @@ def menu_vista(request):
 def departamento_vista(request, id):
     departamento = get_object_or_404(Departamento, id=id)
     return render(request, 'departamento.html', {'departamento': departamento})
-
 def ciudad_vista(request, id):
     ciudad = get_object_or_404(Ciudad, id=id)
     return render(request, 'ciudad.html', {'ciudad': ciudad})
